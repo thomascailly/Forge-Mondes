@@ -34,9 +34,12 @@
     if (!activeArea) return;
     activeArea.innerHTML = '';
     if (activeFilter !== 'all') {
+      const activeBtn = document.querySelector(`.filter-btn[data-filter="${activeFilter}"]`);
+      const label = activeBtn ? (getLangText(activeBtn.dataset.en, activeBtn.dataset.fr) || activeFilter) : activeFilter;
+      
       const tag = document.createElement('span');
       tag.className = 'filter-tag';
-      tag.innerHTML = `${activeFilter} <span class="filter-tag-x">×</span>`;
+      tag.innerHTML = `${label} <span class="filter-tag-x">×</span>`;
       tag.addEventListener('click', () => {
         activeFilter = 'all';
         filterBtns.forEach(b => b.classList.toggle('active', b.dataset.filter === 'all'));

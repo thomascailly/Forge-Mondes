@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Forge-Mondes — Premium Collectible Miniatures</title>
-  <meta name="description" content="Forge-Mondes creates exceptional collectible miniatures for RPGs, wargames, and collectors. Fantasy, Sci-Fi, RPG — every miniature is a masterpiece." />
+  <title data-en="Forge-Mondes — Premium Collectible Miniatures" data-fr="Forge-Mondes — Figurines de Collection Premium">Forge-Mondes — Premium Collectible Miniatures</title>
+  <meta name="description" data-en="Forge-Mondes creates exceptional collectible miniatures for RPGs, wargames, and collectors. Fantasy, Sci-Fi, RPG — every miniature is a masterpiece." data-fr="Forge-Mondes crée des figurines de collection exceptionnelles pour le JdR, le wargame et les collectionneurs. Fantasy, Sci-Fi, JdR — chaque figurine est un chef-d'œuvre." content="Forge-Mondes creates exceptional collectible miniatures for RPGs, wargames, and collectors. Fantasy, Sci-Fi, RPG — every miniature is a masterpiece." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="css/base.css" />
@@ -31,16 +31,25 @@
     </a>
 
     <ul class="navbar-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="collection.html">Collection</a></li>
-      <li><a href="custom.html">Custom</a></li>
-      <li><a href="studio.html">Studio</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html" class="active" data-en="Home" data-fr="Accueil">Home</a></li>
+      <li><a href="collection.html" data-en="Collection" data-fr="Collection">Collection</a></li>
+      <li><a href="custom.html" data-en="Custom" data-fr="Personnalisation">Custom</a></li>
+      <li><a href="studio.html" data-en="Studio" data-fr="Studio">Studio</a></li>
+      <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>
     </ul>
+
+    <div class="lang-switcher">
+      <div class="lang-flag" data-lang="en" title="English">
+        <svg viewBox="0 0 60 30"><path fill="#012169" d="M0 0h60v30H0z"/><path fill="#FFF" d="m0 0 60 30m0-30L0 30"/><path stroke="#FFF" stroke-width="6" d="m0 0 60 30m0-30L0 30"/><path stroke="#C8102E" stroke-width="4" d="m0 0 60 30m0-30L0 30"/><path stroke="#FFF" stroke-width="10" d="M30 0v30M0 15h60"/><path stroke="#C8102E" stroke-width="6" d="M30 0v30M0 15h60"/></svg>
+      </div>
+      <div class="lang-flag" data-lang="fr" title="Français">
+        <svg viewBox="0 0 3 2"><path fill="#EC1B24" d="M0 0h3v2H0z"/><path fill="#FFF" d="M0 0h2v2H0z"/><path fill="#051440" d="M0 0h1v2H0z"/></svg>
+      </div>
+    </div>
 
     <a href="custom.html" class="navbar-cta" id="navbar-cta-btn">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
-      Create a miniature
+      <span data-en="Create a miniature" data-fr="Créer une figurine">Create a miniature</span>
     </a>
 
     <button class="navbar-burger" id="burger-btn" aria-label="Mobile menu" aria-expanded="false">
@@ -51,12 +60,12 @@
 
 <!-- Mobile nav -->
 <div class="navbar-mobile" id="mobile-nav" aria-hidden="true">
-  <a href="index.html">Home</a>
-  <a href="collection.html">Collection</a>
-  <a href="custom.html">Custom</a>
-  <a href="studio.html">Studio</a>
-  <a href="contact.html">Contact</a>
-  <a href="custom.html">✦ Create a miniature</a>
+  <a href="index.html" data-en="Home" data-fr="Accueil">Home</a>
+  <a href="collection.html" data-en="Collection" data-fr="Collection">Collection</a>
+  <a href="custom.html" data-en="Custom" data-fr="Personnalisation">Custom</a>
+  <a href="studio.html" data-en="Studio" data-fr="Studio">Studio</a>
+  <a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a>
+  <a href="custom.html"><span data-en="✦ Create a miniature" data-fr="✦ Créer une figurine">✦ Create a miniature</span></a>
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════
@@ -71,13 +80,13 @@
   <div class="hero-content">
     <div class="hero-eyebrow">
       <span class="hero-eyebrow-line"></span>
-      <span>Exceptional Miniature Studio</span>
+      <span data-en="Exceptional Miniature Studio" data-fr="Studio de figurines d'exception">Exceptional Miniature Studio</span>
       <span class="hero-eyebrow-line"></span>
     </div>
 
-    <h1>Give shape to<br/><em>your legends.</em></h1>
+    <h1 data-en="Give shape to your legends." data-fr="Donnez forme à vos légendes.">Give shape to<br/><em>your legends.</em></h1>
 
-    <p class="hero-subtitle">
+    <p class="hero-subtitle" data-en="Miniatures for role-playing games, wargames, and collection. Each figure, a masterpiece sculpted with precision." data-fr="Figurines pour jeux de rôle, wargames et collection. Chaque pièce, un chef-d'œuvre sculpté avec précision.">
       Miniatures for role-playing games, wargames, and collection.
       Each figure, a masterpiece sculpted with precision.
     </p>
@@ -85,10 +94,10 @@
     <div class="hero-ctas">
       <a href="collection.html" class="btn btn-primary" id="hero-discover-btn">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-        Discover the collection
+        <span data-en="Discover the collection" data-fr="Découvrir la collection">Discover the collection</span>
       </a>
       <a href="custom.html" class="btn btn-secondary" id="hero-custom-btn">
-        Create my miniature
+        <span data-en="Create my miniature" data-fr="Créer ma figurine">Create my miniature</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
     </div>
@@ -98,7 +107,7 @@
     <div class="scroll-mouse">
       <div class="scroll-mouse-dot"></div>
     </div>
-    <span>Scroll</span>
+    <span data-en="Scroll" data-fr="Défiler">Scroll</span>
   </div>
 </section>
 
@@ -108,9 +117,9 @@
 <section class="univers-section section" id="univers">
   <div class="container">
     <div class="section-header reveal">
-      <span class="label">Our universes</span>
-      <h2>Every world deserves<br/>its legend</h2>
-      <p>From high fantasy to the edges of the galaxy, we sculpt the characters that populate your imaginations.</p>
+      <span class="label" data-en="Our universes" data-fr="Nos univers">Our universes</span>
+      <h2 data-en="Every world deserves its legend" data-fr="Chaque monde mérite sa légende">Every world deserves<br/>its legend</h2>
+      <p data-en="From high fantasy to the edges of the galaxy, we sculpt the characters that populate your imaginations." data-fr="De la fantasy épique aux confins de la galaxie, nous sculptons les personnages qui peuplent vos imaginaires.">From high fantasy to the edges of the galaxy, we sculpt the characters that populate your imaginations.</p>
     </div>
 
     <div class="univers-grid">
@@ -121,11 +130,11 @@
         <div class="univers-card-border"></div>
         <div class="univers-card-content">
           <span class="univers-card-icon">⚔️</span>
-          <span class="univers-card-label">Universe</span>
-          <h3>Fantasy</h3>
-          <p>Knights, mages, dragons, and creatures of the dark ages. A world where every detail tells an epic.</p>
+          <span class="univers-card-label" data-en="Universe" data-fr="Univers">Universe</span>
+          <h3 data-en="Fantasy" data-fr="Fantasy">Fantasy</h3>
+          <p data-en="Knights, mages, dragons, and creatures of the dark ages. A world where every detail tells an epic." data-fr="Chevaliers, mages, dragons et créatures des âges sombres. Un monde où chaque détail raconte une épopée.">Knights, mages, dragons, and creatures of the dark ages. A world where every detail tells an epic.</p>
           <a href="collection.html" class="univers-card-link">
-            Explore
+            <span data-en="Explore" data-fr="Explorer">Explore</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -138,11 +147,11 @@
         <div class="univers-card-border"></div>
         <div class="univers-card-content">
           <span class="univers-card-icon">🚀</span>
-          <span class="univers-card-label">Universe</span>
-          <h3>Sci-Fi</h3>
-          <p>Soldiers of the future, aliens, and war machines. Precision at the service of a cosmos at war.</p>
+          <span class="univers-card-label" data-en="Universe" data-fr="Univers">Universe</span>
+          <h3 data-en="Sci-Fi" data-fr="Sci-Fi">Sci-Fi</h3>
+          <p data-en="Soldiers of the future, aliens, and war machines. Precision at the service of a cosmos at war." data-fr="Soldats du futur, aliens et machines de guerre. La précision au service d'un cosmos en guerre.">Soldiers of the future, aliens, and war machines. Precision at the service of a cosmos at war.</p>
           <a href="collection.html" class="univers-card-link">
-            Explore
+            <span data-en="Explore" data-fr="Explorer">Explore</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -155,11 +164,11 @@
         <div class="univers-card-border"></div>
         <div class="univers-card-content">
           <span class="univers-card-icon">🎲</span>
-          <span class="univers-card-label">Universe</span>
-          <h3>RPG & Characters</h3>
-          <p>Give a face to your hero. Rogues, paladins, sorcerers — bring your tabletop adventure to life.</p>
+          <span class="univers-card-label" data-en="Universe" data-fr="Univers">Universe</span>
+          <h3 data-en="RPG & Characters" data-fr="JdR & Personnages">RPG & Characters</h3>
+          <p data-en="Give a face to your hero. Rogues, paladins, sorcerers — bring your tabletop adventure to life." data-fr="Donnez un visage à votre héros. Voleurs, paladins, sorciers — donnez vie à vos aventures sur table.">Give a face to your hero. Rogues, paladins, sorcerers — bring your tabletop adventure to life.</p>
           <a href="collection.html" class="univers-card-link">
-            Explore
+            <span data-en="Explore" data-fr="Explorer">Explore</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -176,9 +185,9 @@
 <section class="collection-preview" id="collection-preview">
   <div class="container">
     <div class="section-header reveal">
-      <span class="label">Collection</span>
-      <h2>Featured Pieces</h2>
-      <p>A selection of our most prized creations by collectors and players around the world.</p>
+      <span class="label" data-en="Collection" data-fr="Collection">Collection</span>
+      <h2 data-en="Featured Pieces" data-fr="Pièces d'exception">Featured Pieces</h2>
+      <p data-en="A selection of our most prized creations by collectors and players around the world." data-fr="Une sélection de nos créations les plus prisées par les collectionneurs du monde entier.">A selection of our most prized creations by collectors and players around the world.</p>
     </div>
 
     <div class="products-grid">
@@ -193,11 +202,11 @@
           </button>
         </div>
         <div class="product-card-info">
-          <span class="product-card-universe">Fantasy</span>
-          <h3 class="product-card-name">Dragon Lord</h3>
-          <p class="product-card-desc">Miniature on a volcanic base, microscopic scale detail.</p>
+          <span class="product-card-universe" data-en="Fantasy" data-fr="Fantasy">Fantasy</span>
+          <h3 class="product-card-name" data-en="Dragon Lord" data-fr="Seigneur Dragon">Dragon Lord</h3>
+          <p class="product-card-desc" data-en="Miniature on a volcanic base, microscopic scale detail." data-fr="Figurine sur socle volcanique, détails à l'échelle microscopique.">Miniature on a volcanic base, microscopic scale detail.</p>
           <div class="product-card-footer">
-            <div class="product-card-price">64 € <span>/ piece</span></div>
+            <div class="product-card-price">64 € <span data-en="/ piece" data-fr="/ pièce">/ piece</span></div>
             <button class="product-card-add" aria-label="Add to cart">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0b0b0d" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </button>
@@ -215,11 +224,11 @@
           </button>
         </div>
         <div class="product-card-info">
-          <span class="product-card-universe">Fantasy</span>
-          <h3 class="product-card-name">Forest Archer</h3>
-          <p class="product-card-desc">Warrior elf, dynamic posture, cape and leafy details.</p>
+          <span class="product-card-universe" data-en="Fantasy" data-fr="Fantasy">Fantasy</span>
+          <h3 class="product-card-name" data-en="Forest Archer" data-fr="Archer de la Forêt">Forest Archer</h3>
+          <p class="product-card-desc" data-en="Warrior elf, dynamic posture, cape and leafy details." data-fr="Elfe guerrier, posture dynamique, cape et détails de feuillage.">Warrior elf, dynamic posture, cape and leafy details.</p>
           <div class="product-card-footer">
-            <div class="product-card-price">48 € <span>/ piece</span></div>
+            <div class="product-card-price">48 € <span data-en="/ piece" data-fr="/ pièce">/ piece</span></div>
             <button class="product-card-add" aria-label="Add to cart">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0b0b0d" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </button>
@@ -237,11 +246,11 @@
           </button>
         </div>
         <div class="product-card-info">
-          <span class="product-card-universe">Sci-Fi</span>
-          <h3 class="product-card-name">Vanguard Mk-VII</h3>
-          <p class="product-card-desc">Elite soldier in assault armor, with campaign relics.</p>
+          <span class="product-card-universe" data-en="Sci-Fi" data-fr="Sci-Fi">Sci-Fi</span>
+          <h3 class="product-card-name" data-en="Vanguard Mk-VII" data-fr="Vanguard Mk-VII">Vanguard Mk-VII</h3>
+          <p class="product-card-desc" data-en="Elite soldier in assault armor, with campaign relics." data-fr="Soldat d'élite en armure d'assaut, avec reliques de campagne.">Elite soldier in assault armor, with campaign relics.</p>
           <div class="product-card-footer">
-            <div class="product-card-price">72 € <span>/ piece</span></div>
+            <div class="product-card-price">72 € <span data-en="/ piece" data-fr="/ pièce">/ piece</span></div>
             <button class="product-card-add" aria-label="Add to cart">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0b0b0d" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </button>
@@ -258,11 +267,11 @@
           </button>
         </div>
         <div class="product-card-info">
-          <span class="product-card-universe">RPG</span>
-          <h3 class="product-card-name">The Archmage</h3>
-          <p class="product-card-desc">Ancient sorcerer, silk robe engraved with runes, crystal staff.</p>
+          <span class="product-card-universe" data-en="RPG" data-fr="JdR">RPG</span>
+          <h3 class="product-card-name" data-en="The Archmage" data-fr="L'Archimage">The Archmage</h3>
+          <p class="product-card-desc" data-en="Ancient sorcerer, silk robe engraved with runes, crystal staff." data-fr="Sorcier ancestral, robe de soie gravée de runes, bâton de cristal.">Ancient sorcerer, silk robe engraved with runes, crystal staff.</p>
           <div class="product-card-footer">
-            <div class="product-card-price">56 € <span>/ piece</span></div>
+            <div class="product-card-price">56 € <span data-en="/ piece" data-fr="/ pièce">/ piece</span></div>
             <button class="product-card-add" aria-label="Add to cart">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0b0b0d" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </button>
@@ -274,7 +283,7 @@
 
     <div class="collection-preview-cta reveal">
       <a href="collection.html" class="btn btn-secondary" id="see-all-btn">
-        See the full collection
+        <span data-en="See the full collection" data-fr="Voir toute la collection">See the full collection</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
     </div>
@@ -289,19 +298,19 @@
     <div class="stats-grid">
       <div class="stat-item reveal">
         <span class="stat-number" data-counter="850" data-suffix="+">850+</span>
-        <span class="stat-label">Miniatures created</span>
+        <span class="stat-label" data-en="Miniatures created" data-fr="Figurines créées">Miniatures created</span>
       </div>
       <div class="stat-item reveal reveal-delay-1">
         <span class="stat-number" data-counter="97" data-suffix="%">97%</span>
-        <span class="stat-label">Satisfied clients</span>
+        <span class="stat-label" data-en="Satisfied clients" data-fr="Clients satisfaits">Satisfied clients</span>
       </div>
       <div class="stat-item reveal reveal-delay-2">
         <span class="stat-number" data-counter="32" data-suffix=" countries">32</span>
-        <span class="stat-label">Shipped worldwide</span>
+        <span class="stat-label" data-en="Shipped worldwide" data-fr="Expédiées dans le monde">Shipped worldwide</span>
       </div>
       <div class="stat-item reveal reveal-delay-3">
         <span class="stat-number" data-counter="50" data-suffix=" mm">50 mm</span>
-        <span class="stat-label">Layer precision</span>
+        <span class="stat-label" data-en="Layer precision" data-fr="Précision de couche">Layer precision</span>
       </div>
     </div>
   </div>
@@ -313,34 +322,34 @@
 <section class="why-us section" id="why-us">
   <div class="container">
     <div class="section-header reveal">
-      <span class="label">Our commitment</span>
-      <h2>Excellence in every detail</h2>
-      <p>What sets Forge-Mondes apart is an obsession: that every millimeter must be perfect.</p>
+      <span class="label" data-en="Our commitment" data-fr="Notre engagement">Our commitment</span>
+      <h2 data-en="Excellence in every detail" data-fr="L'excellence dans chaque détail">Excellence in every detail</h2>
+      <p data-en="What sets Forge-Mondes apart is an obsession: that every millimeter must be perfect." data-fr="Ce qui distingue Forge-Mondes, c'est une obsession : chaque millimètre doit être parfait.">What sets Forge-Mondes apart is an obsession: that every millimeter must be perfect.</p>
     </div>
 
     <div class="why-grid">
       <div class="why-card reveal reveal-delay-1">
         <div class="why-card-icon">🔬</div>
-        <h4>Microscopic Detail</h4>
-        <p>Every engraving, every fabric texture, every face is sculpted with a precision that defies the naked eye. Our miniatures withstand the most demanding macro photography.</p>
+        <h4 data-en="Microscopic Detail" data-fr="Détail microscopique">Microscopic Detail</h4>
+        <p data-en="Every engraving, every fabric texture, every face is sculpted with a precision that defies the naked eye. Our miniatures withstand the most demanding macro photography." data-fr="Chaque gravure, chaque texture, chaque visage est sculpté avec une précision qui défie l'œil nu. Nos figurines résistent aux macrophotographies les plus exigeantes.">Every engraving, every fabric texture, every face is sculpted with a precision that defies the naked eye. Our miniatures withstand the most demanding macro photography.</p>
       </div>
 
       <div class="why-card reveal reveal-delay-2">
         <div class="why-card-icon">🏆</div>
-        <h4>Studio Quality</h4>
-        <p>Our models are designed by award-winning digital sculpting artists, with the eye of a classical sculptor and the tools of a movie studio.</p>
+        <h4 data-en="Studio Quality" data-fr="Qualité Studio">Studio Quality</h4>
+        <p data-en="Our models are designed by award-winning digital sculpting artists, with the eye of a classical sculptor and the tools of a movie studio." data-fr="Nos modèles sont conçus par des artistes sculpteurs numériques primés, avec l'œil du sculpteur classique et les outils d'un studio de cinéma.">Our models are designed by award-winning digital sculpting artists, with the eye of a classical sculptor and the tools of a movie studio.</p>
       </div>
 
       <div class="why-card reveal reveal-delay-3">
         <div class="why-card-icon">✨</div>
-        <h4>Collector Finish</h4>
-        <p>Ultra-fine sanded surface, no visible layer lines, ready for painting or display as is. A result worthy of the greatest houses.</p>
+        <h4 data-en="Collector Finish" data-fr="Finition Collection">Collector Finish</h4>
+        <p data-en="Ultra-fine sanded surface, no visible layer lines, ready for painting or display as is. A result worthy of the greatest houses." data-fr="Surface poncée ultra-fine, pas de lignes de couche visibles, prête à peindre ou à exposer. Un résultat digne des plus grandes maisons.">Ultra-fine sanded surface, no visible layer lines, ready for painting or display as is. A result worthy of the greatest houses.</p>
       </div>
 
       <div class="why-card reveal reveal-delay-4">
         <div class="why-card-icon">💬</div>
-        <h4>Personalized Support</h4>
-        <p>From the first sketch to delivery, an artisan accompanies you. For custom orders, we iterate until the vision is perfect.</p>
+        <h4 data-en="Personalized Support" data-fr="Accompagnement personnalisé">Personalized Support</h4>
+        <p data-en="From the first sketch to delivery, an artisan accompanies you. For custom orders, we iterate until the vision is perfect." data-fr="De la première esquisse à la livraison, un artisan vous accompagne. Pour les commandes personnalisées, nous itérons jusqu'à ce que la vision soit parfaite.">From the first sketch to delivery, an artisan accompanies you. For custom orders, we iterate until the vision is perfect.</p>
       </div>
     </div>
   </div>
@@ -351,16 +360,16 @@
 ═══════════════════════════════════════════════════════════ -->
 <section class="cta-final" id="cta-final">
   <div class="container">
-    <div class="cta-final-ornament">✦ Start the adventure ✦</div>
-    <h2 class="reveal">Create your next miniature.</h2>
-    <p class="reveal reveal-delay-1">Share your vision. We bring it to life with a precision and passion you won't find anywhere else.</p>
+    <div class="cta-final-ornament" data-en="✦ Start the adventure ✦" data-fr="✦ Commencez l'aventure ✦">✦ Start the adventure ✦</div>
+    <h2 class="reveal" data-en="Create your next miniature." data-fr="Créez votre prochaine figurine.">Create your next miniature.</h2>
+    <p class="reveal reveal-delay-1" data-en="Share your vision. We bring it to life with a precision and passion you won't find anywhere else." data-fr="Partagez votre vision. Nous lui donnons vie avec une précision et une passion que vous ne trouverez nulle part ailleurs.">Share your vision. We bring it to life with a precision and passion you won't find anywhere else.</p>
     <div class="cta-final-btns reveal reveal-delay-2">
       <a href="custom.html" class="btn btn-primary" id="cta-create-btn">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
-        Create my custom miniature
+        <span data-en="Create my custom miniature" data-fr="Créer ma figurine personnalisée">Create my custom miniature</span>
       </a>
       <a href="collection.html" class="btn btn-ghost" id="cta-browse-btn">
-        Browse the collection
+        <span data-en="Browse the collection" data-fr="Parcourir la collection">Browse the collection</span>
       </a>
     </div>
   </div>
@@ -374,9 +383,9 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <span class="footer-logo">Forge-Mondes</span>
-        <p>Premium collectible miniature studio. Every figure is a masterpiece designed to last and impress.</p>
+        <p data-en="Premium collectible miniature studio. Every figure is a masterpiece designed to last and impress." data-fr="Studio de figurines de collection premium. Chaque figurine est un chef-d'œuvre conçu pour durer et impressionner.">Premium collectible miniature studio. Every figure is a masterpiece designed to last and impress.</p>
         <div class="footer-socials">
-          <a href="#" class="footer-social-link" aria-label="Instagram">
+          <a href="#" class="footer-social-link" aria-label="Instagram" data-fr="Instagram" data-en="Instagram">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           </a>
           <a href="#" class="footer-social-link" aria-label="Facebook">
@@ -390,52 +399,52 @@
           </a>
         </div>
         <div class="footer-newsletter">
-          <input type="email" placeholder="Your email address" id="newsletter-email" />
-          <button id="newsletter-btn" type="button">Subscribe</button>
+          <input type="email" placeholder="Your email address" data-en="Your email address" data-fr="Votre adresse email" id="newsletter-email" />
+          <button id="newsletter-btn" type="button" data-en="Subscribe" data-fr="S'abonner">Subscribe</button>
         </div>
       </div>
 
       <div class="footer-col">
-        <h4>Collection</h4>
+        <h4 data-en="Collection" data-fr="Collection">Collection</h4>
         <ul>
-          <li><a href="collection.html">All miniatures</a></li>
-          <li><a href="collection.html">Fantasy</a></li>
-          <li><a href="collection.html">Sci-Fi</a></li>
-          <li><a href="collection.html">RPG / Characters</a></li>
-          <li><a href="collection.html">Busts</a></li>
-          <li><a href="collection.html">Creatures</a></li>
+          <li><a href="collection.html" data-en="All miniatures" data-fr="Toutes les figurines">All miniatures</a></li>
+          <li><a href="collection.html" data-en="Fantasy" data-fr="Fantasy">Fantasy</a></li>
+          <li><a href="collection.html" data-en="Sci-Fi" data-fr="Sci-Fi">Sci-Fi</a></li>
+          <li><a href="collection.html" data-en="RPG / Characters" data-fr="JdR / Personnages">RPG / Characters</a></li>
+          <li><a href="collection.html" data-en="Busts" data-fr="Bustes">Busts</a></li>
+          <li><a href="collection.html" data-en="Creatures" data-fr="Créatures">Creatures</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Studio</h4>
+        <h4 data-en="Studio" data-fr="Studio">Studio</h4>
         <ul>
-          <li><a href="custom.html">Custom</a></li>
-          <li><a href="studio.html">Our philosophy</a></li>
-          <li><a href="studio.html">Materials</a></li>
-          <li><a href="studio.html">Process</a></li>
-          <li><a href="contact.html">Free quote</a></li>
+          <li><a href="custom.html" data-en="Custom" data-fr="Personnalisation">Custom</a></li>
+          <li><a href="studio.html" data-en="Our philosophy" data-fr="Notre philosophie">Our philosophy</a></li>
+          <li><a href="studio.html" data-en="Materials" data-fr="Matériaux">Materials</a></li>
+          <li><a href="studio.html" data-en="Process" data-fr="Processus">Process</a></li>
+          <li><a href="contact.html" data-en="Free quote" data-fr="Devis gratuit">Free quote</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Information</h4>
+        <h4 data-en="Information" data-fr="Informations">Information</h4>
         <ul>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Shipping</a></li>
-          <li><a href="#">Legal Notice</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>
+          <li><a href="#" data-en="FAQ" data-fr="FAQ">FAQ</a></li>
+          <li><a href="#" data-en="Shipping" data-fr="Livraison">Shipping</a></li>
+          <li><a href="#" data-en="Legal Notice" data-fr="Mentions Légales">Legal Notice</a></li>
+          <li><a href="#" data-en="Terms & Conditions" data-fr="CGV">Terms & Conditions</a></li>
         </ul>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>© 2026 Forge-Mondes. All rights reserved. Crafted with passion.</p>
+      <p data-en="© 2026 Forge-Mondes. All rights reserved. Crafted with passion." data-fr="© 2026 Forge-Mondes. Tous droits réservés. Créé avec passion.">© 2026 Forge-Mondes. All rights reserved. Crafted with passion.</p>
       <div class="footer-bottom-links">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Cookies</a>
+        <a href="#" data-en="Privacy" data-fr="Confidentialité">Privacy</a>
+        <a href="#" data-en="Terms" data-fr="Conditions">Terms</a>
+        <a href="#" data-en="Cookies" data-fr="Cookies">Cookies</a>
       </div>
     </div>
   </div>

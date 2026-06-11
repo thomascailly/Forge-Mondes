@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Collection — Forge-Mondes Premium Miniatures</title>
-  <meta name="description" content="Browse the complete Forge-Mondes miniature collection: Fantasy, Sci-Fi, RPG, Busts, and Creatures. Unique pieces, collector finish." />
+  <title data-en="Collection — Forge-Mondes Premium Miniatures" data-fr="Collection — Figurines Premium Forge-Mondes">Collection — Forge-Mondes Premium Miniatures</title>
+  <meta name="description" data-en="Browse the complete Forge-Mondes miniature collection: Fantasy, Sci-Fi, RPG, Busts, and Creatures. Unique pieces, collector finish." data-fr="Parcourez la collection complète de figurines Forge-Mondes : Fantasy, Sci-Fi, JdR, Bustes et Créatures. Pièces uniques, finition collection." content="Browse the complete Forge-Mondes miniature collection: Fantasy, Sci-Fi, RPG, Busts, and Creatures. Unique pieces, collector finish." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="css/base.css" />
@@ -25,26 +25,36 @@
       <span class="navbar-logo-text">Forge-Mondes</span>
     </a>
     <ul class="navbar-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="collection.html" class="active">Collection</a></li>
-      <li><a href="custom.html">Custom</a></li>
-      <li><a href="studio.html">Studio</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html" data-en="Home" data-fr="Accueil">Home</a></li>
+      <li><a href="collection.html" class="active" data-en="Collection" data-fr="Collection">Collection</a></li>
+      <li><a href="custom.html" data-en="Custom" data-fr="Personnalisation">Custom</a></li>
+      <li><a href="studio.html" data-en="Studio" data-fr="Studio">Studio</a></li>
+      <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>
     </ul>
+
+    <div class="lang-switcher">
+      <div class="lang-flag" data-lang="en" title="English">
+        <svg viewBox="0 0 60 30"><path fill="#012169" d="M0 0h60v30H0z"/><path fill="#FFF" d="m0 0 60 30m0-30L0 30"/><path stroke="#FFF" stroke-width="6" d="m0 0 60 30m0-30L0 30"/><path stroke="#C8102E" stroke-width="4" d="m0 0 60 30m0-30L0 30"/><path stroke="#FFF" stroke-width="10" d="M30 0v30M0 15h60"/><path stroke="#C8102E" stroke-width="6" d="M30 0v30M0 15h60"/></svg>
+      </div>
+      <div class="lang-flag" data-lang="fr" title="Français">
+        <svg viewBox="0 0 3 2"><path fill="#EC1B24" d="M0 0h3v2H0z"/><path fill="#FFF" d="M0 0h2v2H0z"/><path fill="#051440" d="M0 0h1v2H0z"/></svg>
+      </div>
+    </div>
+
     <a href="custom.html" class="navbar-cta">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
-      Create a miniature
+      <span data-en="Create a miniature" data-fr="Créer une figurine">Create a miniature</span>
     </a>
     <button class="navbar-burger" id="burger-btn" aria-label="Mobile menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div class="navbar-mobile" id="mobile-nav">
-  <a href="index.html">Home</a>
-  <a href="collection.html" class="active">Collection</a>
-  <a href="custom.html">Custom</a>
-  <a href="studio.html">Studio</a>
-  <a href="contact.html">Contact</a>
-  <a href="custom.html">✦ Create a miniature</a>
+  <a href="index.html" data-en="Home" data-fr="Accueil">Home</a>
+  <a href="collection.html" class="active" data-en="Collection" data-fr="Collection">Collection</a>
+  <a href="custom.html" data-en="Custom" data-fr="Personnalisation">Custom</a>
+  <a href="studio.html" data-en="Studio" data-fr="Studio">Studio</a>
+  <a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a>
+  <a href="custom.html"><span data-en="✦ Create a miniature" data-fr="✦ Créer une figurine">✦ Create a miniature</span></a>
 </div>
 
 <!-- PAGE HERO -->
@@ -52,14 +62,14 @@
   <div class="page-hero">
     <div class="container">
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="index.html">Home</a>
+        <a href="index.html" data-en="Home" data-fr="Accueil">Home</a>
         <span class="breadcrumb-sep">›</span>
-        <span class="breadcrumb-current">Collection</span>
+        <span class="breadcrumb-current" data-en="Collection" data-fr="Collection">Collection</span>
       </nav>
       <div class="page-hero-content reveal">
-        <span class="label">Full Catalog</span>
-        <h1>The Collection</h1>
-        <p>From dark age creatures to future soldiers — every piece is a world of its own.</p>
+        <span class="label" data-en="Full Catalog" data-fr="Catalogue Complet">Full Catalog</span>
+        <h1 data-en="The Collection" data-fr="La Collection">The Collection</h1>
+        <p data-en="From dark age creatures to future soldiers — every piece is a world of its own." data-fr="Des créatures des âges sombres aux soldats du futur — chaque pièce est un monde en soi.">From dark age creatures to future soldiers — every piece is a world of its own.</p>
       </div>
     </div>
   </div>
@@ -71,37 +81,37 @@
       <!-- SIDEBAR -->
       <aside class="collection-sidebar" id="collection-sidebar" aria-label="Filters">
         <div class="sidebar-section">
-          <h4>Universes</h4>
+          <h4 data-en="Universes" data-fr="Univers">Universes</h4>
           <div class="filter-list">
             <button class="filter-btn active" data-filter="all" id="filter-all">
-              <span class="filter-btn-icon">🌍</span> All
+              <span class="filter-btn-icon">🌍</span> <span data-en="All" data-fr="Tout">All</span>
               <span class="filter-btn-count">12</span>
             </button>
             <button class="filter-btn" data-filter="fantasy" id="filter-fantasy">
-              <span class="filter-btn-icon">⚔️</span> Fantasy
+              <span class="filter-btn-icon">⚔️</span> <span data-en="Fantasy" data-fr="Fantasy">Fantasy</span>
               <span class="filter-btn-count">5</span>
             </button>
             <button class="filter-btn" data-filter="scifi" id="filter-scifi">
-              <span class="filter-btn-icon">🚀</span> Sci-Fi
+              <span class="filter-btn-icon">🚀</span> <span data-en="Sci-Fi" data-fr="Sci-Fi">Sci-Fi</span>
               <span class="filter-btn-count">3</span>
             </button>
             <button class="filter-btn" data-filter="jdr" id="filter-jdr">
-              <span class="filter-btn-icon">🎲</span> RPG / Characters
+              <span class="filter-btn-icon">🎲</span> <span data-en="RPG / Characters" data-fr="JdR / Personnages">RPG / Characters</span>
               <span class="filter-btn-count">2</span>
             </button>
             <button class="filter-btn" data-filter="buste" id="filter-buste">
-              <span class="filter-btn-icon">🗿</span> Busts
+              <span class="filter-btn-icon">🗿</span> <span data-en="Busts" data-fr="Bustes">Busts</span>
               <span class="filter-btn-count">1</span>
             </button>
             <button class="filter-btn" data-filter="creature" id="filter-creature">
-              <span class="filter-btn-icon">🐉</span> Creatures
+              <span class="filter-btn-icon">🐉</span> <span data-en="Creatures" data-fr="Créatures">Creatures</span>
               <span class="filter-btn-count">1</span>
             </button>
           </div>
         </div>
 
         <div class="sidebar-section">
-          <h4>Max Price</h4>
+          <h4 data-en="Max Price" data-fr="Prix Max">Max Price</h4>
           <div class="price-range-inputs">
             <input class="price-input" type="number" value="0" min="0" max="300" placeholder="Min" id="price-min" />
             <span class="price-sep">—</span>
@@ -111,16 +121,16 @@
         </div>
 
         <div class="sidebar-section">
-          <h4>Finish</h4>
+          <h4 data-en="Finish" data-fr="Finition">Finish</h4>
           <div class="filter-list">
             <button class="filter-btn active" data-filter="all">
-              <span class="filter-btn-icon">✨</span> All
+              <span class="filter-btn-icon">✨</span> <span data-en="All" data-fr="Tout">All</span>
             </button>
             <button class="filter-btn">
-              <span class="filter-btn-icon">⬜</span> Raw (Grey)
+              <span class="filter-btn-icon">⬜</span> <span data-en="Raw (Grey)" data-fr="Brut (Gris)">Raw (Grey)</span>
             </button>
             <button class="filter-btn">
-              <span class="filter-btn-icon">🎨</span> Pro Painted
+              <span class="filter-btn-icon">🎨</span> <span data-en="Pro Painted" data-fr="Peint Studio">Pro Painted</span>
             </button>
           </div>
         </div>
@@ -129,12 +139,12 @@
       <!-- MAIN GRID -->
       <main>
         <div class="collection-topbar">
-          <p class="collection-count">Showing <strong>12</strong> miniatures</p>
+          <p class="collection-count" data-en="Showing 12 miniatures" data-fr="Affichage de 12 figurines">Showing <strong>12</strong> miniatures</p>
           <select class="sort-select" id="sort-select" aria-label="Sort by">
-            <option value="popular">Popularity</option>
-            <option value="price-asc">Price: Low to High</option>
-            <option value="price-desc">Price: High to Low</option>
-            <option value="new">Newest Arrivals</option>
+            <option value="popular" data-en="Popularity" data-fr="Popularité">Popularity</option>
+            <option value="price-asc" data-en="Price: Low to High" data-fr="Prix : Croissant">Price: Low to High</option>
+            <option value="price-desc" data-en="Price: High to Low" data-fr="Prix : Décroissant">Price: High to Low</option>
+            <option value="new" data-en="Newest Arrivals" data-fr="Nouveautés">Newest Arrivals</option>
           </select>
         </div>
 
@@ -335,10 +345,10 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Forge-Mondes. All rights reserved.</p>
+      <p data-en="© 2026 Forge-Mondes. All rights reserved." data-fr="© 2026 Forge-Mondes. Tous droits réservés.">© 2026 Forge-Mondes. All rights reserved.</p>
       <div class="footer-bottom-links">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
+        <a href="#" data-en="Privacy" data-fr="Confidentialité">Privacy</a>
+        <a href="#" data-en="Terms" data-fr="Conditions">Terms</a>
       </div>
     </div>
   </div>

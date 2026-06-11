@@ -114,6 +114,81 @@
   }
 })();
 
+/* ── LANGUAGE SWITCHER ───────────────────────────────────── */
+(function initLanguage() {
+  const flags = document.querySelectorAll('.lang-flag');
+  const translatable = document.querySelectorAll('[data-en], [data-fr]');
+
+  function updateLanguage(lang) {
+    const isFr = lang === 'fr';
+    
+    // Update active class on flags
+    flags.forEach(f => {
+      f.classList.toggle('active', f.dataset.lang === lang);
+    });
+
+    // Update text content or attributes
+    translatable.forEach(el => {
+      const text = isFr ? el.dataset.fr : el.dataset.en;
+      if (!text) return;
+
+      // Handle Title and Meta tags specifically
+      if (el.tagName === 'TITLE') {
+        document.title = text;
+        return;
+      }
+      if (el.tagName === 'META' && el.getAttribute('name') === 'description') {
+        el.setAttribute('content', text);
+        return;
+      }
+
+      // If it's a placeholder
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        if (el.hasAttribute('placeholder')) el.placeholder = text;
+      }
+      
+      // Update direct text nodes (preserves SVGs and other elements)
+      let foundText = false;
+      el.childNodes.forEach(node => {
+        if (node.nodeType === 3 && node.textContent.trim().length > 0) {
+          node.textContent = text;
+          foundText = true;
+        }
+      });
+      
+      // Fallback for elements without direct text nodes (e.g. empty spans or buttons with only text)
+      if (!foundText && el.children.length === 0) {
+        el.textContent = text;
+      }
+    });
+
+    // Save preference
+    localStorage.setItem('forge-mondes-lang', lang);
+    document.documentElement.lang = lang;
+    
+    // Dispatch event for other scripts to respond
+    window.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang } }));
+  }
+
+  // Global helper to get translated text in JS
+  window.getLangText = function(en, fr) {
+    const lang = localStorage.getItem('forge-mondes-lang') || 'en';
+    return lang === 'fr' ? fr : en;
+  };
+
+  // Event listeners
+  flags.forEach(flag => {
+    flag.addEventListener('click', () => {
+      const lang = flag.dataset.lang;
+      updateLanguage(lang);
+    });
+  });
+
+  // Load saved preference or default
+  const saved = localStorage.getItem('forge-mondes-lang') || 'en';
+  updateLanguage(saved);
+})();
+
 /* ── SMOOTH ANCHOR SCROLL ────────────────────────────────── */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {

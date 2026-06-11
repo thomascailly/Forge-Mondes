@@ -93,26 +93,26 @@
       });
 
       if (!valid) {
-        if (window.showToast) showToast('Please fill in all required fields.', 'error');
+        if (window.showToast) showToast(getLangText('Please fill in all required fields.', 'Veuillez remplir tous les champs obligatoires.'), 'error');
         return;
       }
 
       // Success state
       const btn = form.querySelector('button[type="submit"]');
       if (btn) {
-        btn.textContent = 'Sending...';
+        btn.textContent = getLangText('Sending...', 'Envoi en cours...');
         btn.disabled = true;
         btn.style.opacity = '0.7';
       }
 
       setTimeout(() => {
         if (btn) {
-          btn.textContent = 'Request sent ✓';
+          btn.textContent = getLangText('Request sent ✓', 'Demande envoyée ✓');
           btn.style.background = 'linear-gradient(135deg, #6ab87e, #3d9957)';
           btn.style.opacity = '1';
         }
         form.reset();
-        if (window.showToast) showToast('Your quote request has been sent successfully!');
+        if (window.showToast) showToast(getLangText('Your quote request has been sent successfully!', 'Votre demande de devis a été envoyée avec succès !'));
       }, 1400);
     });
   }
