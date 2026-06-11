@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forge-Mondes — Premium Collectible Miniatures</title>
+  <meta name="description" content="Forge-Mondes creates exceptional collectible miniatures for RPGs, wargames, and collectors. Fantasy, Sci-Fi, RPG — every miniature is a masterpiece." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/pages/home.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════════════════════ -->
+<nav class="navbar" role="navigation" aria-label="Main Navigation">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo" aria-label="Forge-Mondes home">
+      <div class="navbar-logo-mark">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="18,2 34,10 34,26 18,34 2,26 2,10" fill="none" stroke="#c9a86a" stroke-width="1.5"/>
+          <polygon points="18,8 28,13 28,23 18,28 8,23 8,13" fill="none" stroke="#c9a86a" stroke-width="0.8" opacity="0.5"/>
+          <path d="M18 10 L18 26 M12 14 L24 14 M12 22 L24 22" stroke="#c9a86a" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <span class="navbar-logo-text">Forge-Mondes</span>
+    </a>
+
+    <ul class="navbar-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="collection.html">Collection</a></li>
+      <li><a href="custom.html">Custom</a></li>
+      <li><a href="studio.html">Studio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <a href="custom.html" class="navbar-cta" id="navbar-cta-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+      Create a miniature
+    </a>
+
+    <button class="navbar-burger" id="burger-btn" aria-label="Mobile menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile nav -->
+<div class="navbar-mobile" id="mobile-nav" aria-hidden="true">
+  <a href="index.html">Home</a>
+  <a href="collection.html">Collection</a>
+  <a href="custom.html">Custom</a>
+  <a href="studio.html">Studio</a>
+  <a href="contact.html">Contact</a>
+  <a href="custom.html">✦ Create a miniature</a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════════════════ -->
+<section class="hero" id="hero" aria-label="Main Banner">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-overlay-sides"></div>
+  <div class="hero-particles"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span class="hero-eyebrow-line"></span>
+      <span>Exceptional Miniature Studio</span>
+      <span class="hero-eyebrow-line"></span>
+    </div>
+
+    <h1>Give shape to<br/><em>your legends.</em></h1>
+
+    <p class="hero-subtitle">
+      Miniatures for role-playing games, wargames, and collection.
+      Each figure, a masterpiece sculpted with precision.
+    </p>
+
+    <div class="hero-ctas">
+      <a href="collection.html" class="btn btn-primary" id="hero-discover-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        Discover the collection
+      </a>
+      <a href="custom.html" class="btn btn-secondary" id="hero-custom-btn">
+        Create my miniature
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint" aria-hidden="true">
+    <div class="scroll-mouse">
+      <div class="scroll-mouse-dot"></div>
+    </div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     UNIVERSES
+═══════════════════════════════════════════════════════════ -->
+<section class="univers-section section" id="univers">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="label">Our universes</span>
+      <h2>Every world deserves<br/>its legend</h2>
+      <p>From high fantasy to the edges of the galaxy, we sculpt the characters that populate your imaginations.</p>
+    </div>
+
+    <div class="univers-grid">
+      <!-- Fantasy -->
+      <article class="univers-card reveal reveal-delay-1">
+        <div class="univers-card-bg" style="background-image: url('assets/images/card_fantasy.png')"></div>
+        <div class="univers-card-overlay"></div>
+        <div class="univers-card-border"></div>
+        <div class="univers-card-content">
+          <span class="univers-card-icon">⚔️</span>
+          <span class="univers-card-label">Universe</span>
+          <h3>Fantasy</h3>
+          <p>Knights, mages, dragons, and creatures of the dark ages. A world where every detail tells an epic.</p>
+          <a href="collection.html" class="univers-card-link">
+            Explore
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Sci-Fi -->
+      <article class="univers-card reveal reveal-delay-2">
+        <div class="univers-card-bg" style="background-image: url('assets/images/card_scifi.png')"></div>
+        <div class="univers-card-overlay"></div>
+        <div class="univers-card-border"></div>
+        <div class="univers-card-content">
+          <span class="univers-card-icon">🚀</span>
+          <span class="univers-card-label">Universe</span>
+          <h3>Sci-Fi</h3>
+          <p>Soldiers of the future, aliens, and war machines. Precision at the service of a cosmos at war.</p>
+          <a href="collection.html" class="univers-card-link">
+            Explore
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- RPG -->
+      <article class="univers-card reveal reveal-delay-3">
+        <div class="univers-card-bg" style="background-image: url('assets/images/card_jdr.png')"></div>
+        <div class="univers-card-overlay"></div>
+        <div class="univers-card-border"></div>
+        <div class="univers-card-content">
+          <span class="univers-card-icon">🎲</span>
+          <span class="univers-card-label">Universe</span>
+          <h3>RPG & Characters</h3>
+          <p>Give a face to your hero. Rogues, paladins, sorcerers — bring your tabletop adventure to life.</p>
+          <a href="collection.html" class="univers-card-link">
+            Explore
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ═══════════════════════════════════════════════════════════
+     COLLECTION PREVIEW
+═══════════════════════════════════════════════════════════ -->
+<section class="collection-preview" id="collection-preview">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="label">Collection</span>
+      <h2>Featured Pieces</h2>
+      <p>A selection of our most prized creations by collectors and players around the world.</p>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- Product 1 -->
+      <article class="product-card reveal reveal-delay-1" data-universe="fantasy" data-price="64">
+        <div class="product-card-image">
+          <img src="assets/images/product_1.png" alt="Dragon Lord — Premium Fantasy Miniature" loading="lazy" />
+          <span class="product-card-badge">Bestseller</span>
+          <button class="product-card-wish" aria-label="Add to wishlist">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </button>
+        </div>
+        <div class="product-card-info">
+          <span class="product-card-universe">Fantasy</span>
+          <h3 class="product-card-name">Dragon Lord</h3>
+          <p class="product-card-desc">Miniature on a volcanic base, microscopic scale detail.</p>
+          <div class="product-card-footer">
+            <div class="product-card-price">64 € <span>/ piece</span></div>
+            <button class="product-card-add" aria-label="Add to cart">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0b0b0d" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 2 -->
+      <article class="product-card reveal reveal-delay-2" data-universe="fantasy" data-price="48">
+        <div class="product-card-image">
+          <img src="assets/images/product_2.png" alt="Forest Archer — Premium Elf Miniature" loading="lazy" />
+          <span class="product-card-badge">New</span>
+          <button class="product-card-wish" aria-label="Add to wishlist">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </button>
+        </div>
+        <div class="product-card-info">
+          <span class="product-card-universe">Fantasy</span>
+          <h3 class="product-card-name">Forest Archer</h3>
+          <p class="product-card-desc">Warrior elf, dynamic posture, cape and leafy details.</p>
+          <div class="product-card-footer">
+            <div class="product-card-price">48 € <span>/ piece</span></div>
+            <button class="product-card-add" aria-label="Add to cart">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0b0b0d" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 3 -->
+      <article class="product-card reveal reveal-delay-3" data-universe="scifi" data-price="72">
+        <div class="product-card-image" style="background: linear-gradient(135deg, #0d1a2e 0%, #1a2040 50%, #0a1020 100%);">
+          <div class="product-card-image-fallback" style="font-size:5rem; position:absolute; inset:0; display:flex; align-items:center; justify-content:center;">🤖</div>
+          <span class="product-card-badge">Limited Edition</span>
+          <button class="product-card-wish" aria-label="Add to wishlist">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </button>
+        </div>
+        <div class="product-card-info">
+          <span class="product-card-universe">Sci-Fi</span>
+          <h3 class="product-card-name">Vanguard Mk-VII</h3>
+          <p class="product-card-desc">Elite soldier in assault armor, with campaign relics.</p>
+          <div class="product-card-footer">
+            <div class="product-card-price">72 € <span>/ piece</span></div>
+            <button class="product-card-add" aria-label="Add to cart">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0b0b0d" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 4 -->
+      <article class="product-card reveal reveal-delay-4" data-universe="jdr" data-price="56">
+        <div class="product-card-image" style="background: linear-gradient(135deg, #1a0d2e 0%, #2a1040 50%, #120a20 100%);">
+          <div class="product-card-image-fallback" style="font-size:5rem; position:absolute; inset:0; display:flex; align-items:center; justify-content:center;">🧙</div>
+          <button class="product-card-wish" aria-label="Add to wishlist">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </button>
+        </div>
+        <div class="product-card-info">
+          <span class="product-card-universe">RPG</span>
+          <h3 class="product-card-name">The Archmage</h3>
+          <p class="product-card-desc">Ancient sorcerer, silk robe engraved with runes, crystal staff.</p>
+          <div class="product-card-footer">
+            <div class="product-card-price">56 € <span>/ piece</span></div>
+            <button class="product-card-add" aria-label="Add to cart">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0b0b0d" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="collection-preview-cta reveal">
+      <a href="collection.html" class="btn btn-secondary" id="see-all-btn">
+        See the full collection
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     STATS BAND
+═══════════════════════════════════════════════════════════ -->
+<section class="stats-band">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <span class="stat-number" data-counter="850" data-suffix="+">850+</span>
+        <span class="stat-label">Miniatures created</span>
+      </div>
+      <div class="stat-item reveal reveal-delay-1">
+        <span class="stat-number" data-counter="97" data-suffix="%">97%</span>
+        <span class="stat-label">Satisfied clients</span>
+      </div>
+      <div class="stat-item reveal reveal-delay-2">
+        <span class="stat-number" data-counter="32" data-suffix=" countries">32</span>
+        <span class="stat-label">Shipped worldwide</span>
+      </div>
+      <div class="stat-item reveal reveal-delay-3">
+        <span class="stat-number" data-counter="50" data-suffix=" mm">50 mm</span>
+        <span class="stat-label">Layer precision</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     WHY US
+═══════════════════════════════════════════════════════════ -->
+<section class="why-us section" id="why-us">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="label">Our commitment</span>
+      <h2>Excellence in every detail</h2>
+      <p>What sets Forge-Mondes apart is an obsession: that every millimeter must be perfect.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-card-icon">🔬</div>
+        <h4>Microscopic Detail</h4>
+        <p>Every engraving, every fabric texture, every face is sculpted with a precision that defies the naked eye. Our miniatures withstand the most demanding macro photography.</p>
+      </div>
+
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-card-icon">🏆</div>
+        <h4>Studio Quality</h4>
+        <p>Our models are designed by award-winning digital sculpting artists, with the eye of a classical sculptor and the tools of a movie studio.</p>
+      </div>
+
+      <div class="why-card reveal reveal-delay-3">
+        <div class="why-card-icon">✨</div>
+        <h4>Collector Finish</h4>
+        <p>Ultra-fine sanded surface, no visible layer lines, ready for painting or display as is. A result worthy of the greatest houses.</p>
+      </div>
+
+      <div class="why-card reveal reveal-delay-4">
+        <div class="why-card-icon">💬</div>
+        <h4>Personalized Support</h4>
+        <p>From the first sketch to delivery, an artisan accompanies you. For custom orders, we iterate until the vision is perfect.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     FINAL CTA
+═══════════════════════════════════════════════════════════ -->
+<section class="cta-final" id="cta-final">
+  <div class="container">
+    <div class="cta-final-ornament">✦ Start the adventure ✦</div>
+    <h2 class="reveal">Create your next miniature.</h2>
+    <p class="reveal reveal-delay-1">Share your vision. We bring it to life with a precision and passion you won't find anywhere else.</p>
+    <div class="cta-final-btns reveal reveal-delay-2">
+      <a href="custom.html" class="btn btn-primary" id="cta-create-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+        Create my custom miniature
+      </a>
+      <a href="collection.html" class="btn btn-ghost" id="cta-browse-btn">
+        Browse the collection
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">Forge-Mondes</span>
+        <p>Premium collectible miniature studio. Every figure is a masterpiece designed to last and impress.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Pinterest">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83.18-.76 1.22-5.17 1.22-5.17s-.31-.63-.31-1.56c0-1.46.85-2.55 1.9-2.55.9 0 1.33.67 1.33 1.48 0 .9-.57 2.25-.87 3.5-.25 1.04.52 1.89 1.54 1.89 1.85 0 3.27-1.95 3.27-4.77 0-2.49-1.79-4.23-4.35-4.23-2.96 0-4.7 2.22-4.7 4.52 0 .9.34 1.85.77 2.37.08.1.09.19.07.29-.08.32-.25 1.04-.29 1.19-.05.19-.17.23-.39.14-1.39-.65-2.26-2.7-2.26-4.34 0-3.53 2.57-6.77 7.4-6.77 3.88 0 6.9 2.77 6.9 6.47 0 3.86-2.43 6.96-5.81 6.96-1.13 0-2.2-.59-2.57-1.28l-.7 2.61c-.25.97-.93 2.18-1.39 2.92.05.01.1.02.15.02C17.52 22 22 17.52 22 12S17.52 2 12 2z"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          </a>
+        </div>
+        <div class="footer-newsletter">
+          <input type="email" placeholder="Your email address" id="newsletter-email" />
+          <button id="newsletter-btn" type="button">Subscribe</button>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Collection</h4>
+        <ul>
+          <li><a href="collection.html">All miniatures</a></li>
+          <li><a href="collection.html">Fantasy</a></li>
+          <li><a href="collection.html">Sci-Fi</a></li>
+          <li><a href="collection.html">RPG / Characters</a></li>
+          <li><a href="collection.html">Busts</a></li>
+          <li><a href="collection.html">Creatures</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="custom.html">Custom</a></li>
+          <li><a href="studio.html">Our philosophy</a></li>
+          <li><a href="studio.html">Materials</a></li>
+          <li><a href="studio.html">Process</a></li>
+          <li><a href="contact.html">Free quote</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Information</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Legal Notice</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Forge-Mondes. All rights reserved. Crafted with passion.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/pages/home.js"></script>
+<script>
+  // Newsletter
+  document.getElementById('newsletter-btn')?.addEventListener('click', () => {
+    const email = document.getElementById('newsletter-email')?.value;
+    if (email && email.includes('@')) {
+      if (window.showToast) showToast('Thank you! You are now subscribed.');
+      document.getElementById('newsletter-email').value = '';
+    } else {
+      if (window.showToast) showToast('Invalid email address.', 'error');
+    }
+  });
+</script>
+
+</body>
+</html>

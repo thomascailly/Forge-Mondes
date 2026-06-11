@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collection — Forge-Mondes Premium Miniatures</title>
+  <meta name="description" content="Browse the complete Forge-Mondes miniature collection: Fantasy, Sci-Fi, RPG, Busts, and Creatures. Unique pieces, collector finish." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/pages/home.css" />
+  <link rel="stylesheet" href="css/pages/collection.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" role="navigation" aria-label="Main Navigation">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo">
+      <div class="navbar-logo-mark">
+        <svg viewBox="0 0 36 36" fill="none"><polygon points="18,2 34,10 34,26 18,34 2,26 2,10" fill="none" stroke="#c9a86a" stroke-width="1.5"/><polygon points="18,8 28,13 28,23 18,28 8,23 8,13" fill="none" stroke="#c9a86a" stroke-width="0.8" opacity="0.5"/><path d="M18 10 L18 26 M12 14 L24 14 M12 22 L24 22" stroke="#c9a86a" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <span class="navbar-logo-text">Forge-Mondes</span>
+    </a>
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="collection.html" class="active">Collection</a></li>
+      <li><a href="custom.html">Custom</a></li>
+      <li><a href="studio.html">Studio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="custom.html" class="navbar-cta">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+      Create a miniature
+    </a>
+    <button class="navbar-burger" id="burger-btn" aria-label="Mobile menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="navbar-mobile" id="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="collection.html" class="active">Collection</a>
+  <a href="custom.html">Custom</a>
+  <a href="studio.html">Studio</a>
+  <a href="contact.html">Contact</a>
+  <a href="custom.html">✦ Create a miniature</a>
+</div>
+
+<!-- PAGE HERO -->
+<header class="collection-page">
+  <div class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <span class="breadcrumb-current">Collection</span>
+      </nav>
+      <div class="page-hero-content reveal">
+        <span class="label">Full Catalog</span>
+        <h1>The Collection</h1>
+        <p>From dark age creatures to future soldiers — every piece is a world of its own.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- COLLECTION LAYOUT -->
+  <div class="container">
+    <div class="collection-layout">
+
+      <!-- SIDEBAR -->
+      <aside class="collection-sidebar" id="collection-sidebar" aria-label="Filters">
+        <div class="sidebar-section">
+          <h4>Universes</h4>
+          <div class="filter-list">
+            <button class="filter-btn active" data-filter="all" id="filter-all">
+              <span class="filter-btn-icon">🌍</span> All
+              <span class="filter-btn-count">12</span>
+            </button>
+            <button class="filter-btn" data-filter="fantasy" id="filter-fantasy">
+              <span class="filter-btn-icon">⚔️</span> Fantasy
+              <span class="filter-btn-count">5</span>
+            </button>
+            <button class="filter-btn" data-filter="scifi" id="filter-scifi">
+              <span class="filter-btn-icon">🚀</span> Sci-Fi
+              <span class="filter-btn-count">3</span>
+            </button>
+            <button class="filter-btn" data-filter="jdr" id="filter-jdr">
+              <span class="filter-btn-icon">🎲</span> RPG / Characters
+              <span class="filter-btn-count">2</span>
+            </button>
+            <button class="filter-btn" data-filter="buste" id="filter-buste">
+              <span class="filter-btn-icon">🗿</span> Busts
+              <span class="filter-btn-count">1</span>
+            </button>
+            <button class="filter-btn" data-filter="creature" id="filter-creature">
+              <span class="filter-btn-icon">🐉</span> Creatures
+              <span class="filter-btn-count">1</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="sidebar-section">
+          <h4>Max Price</h4>
+          <div class="price-range-inputs">
+            <input class="price-input" type="number" value="0" min="0" max="300" placeholder="Min" id="price-min" />
+            <span class="price-sep">—</span>
+            <input class="price-input" type="number" value="180" min="0" max="300" placeholder="Max" id="price-max" />
+          </div>
+          <input class="range-slider" type="range" min="0" max="300" value="180" id="price-slider" aria-label="Max price" />
+        </div>
+
+        <div class="sidebar-section">
+          <h4>Finish</h4>
+          <div class="filter-list">
+            <button class="filter-btn active" data-filter="all">
+              <span class="filter-btn-icon">✨</span> All
+            </button>
+            <button class="filter-btn">
+              <span class="filter-btn-icon">⬜</span> Raw (Grey)
+            </button>
+            <button class="filter-btn">
+              <span class="filter-btn-icon">🎨</span> Pro Painted
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- MAIN GRID -->
+      <main>
+        <div class="collection-topbar">
+          <p class="collection-count">Showing <strong>12</strong> miniatures</p>
+          <select class="sort-select" id="sort-select" aria-label="Sort by">
+            <option value="popular">Popularity</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="new">Newest Arrivals</option>
+          </select>
+        </div>
+
+        <div class="active-filters" id="active-filters" aria-live="polite"></div>
+
+        <div class="collection-grid" id="collection-grid">
+
+          <article class="product-card reveal" data-universe="fantasy" data-price="64">
+            <div class="product-card-image">
+              <img src="assets/images/product_1.png" alt="Dragon Lord" loading="lazy" />
+              <span class="product-card-badge">Bestseller</span>
+              <button class="product-card-wish" aria-label="Favorites"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="product-card-info">
+              <span class="product-card-universe">Fantasy</span>
+              <h3 class="product-card-name">Dragon Lord</h3>
+              <p class="product-card-desc">Miniature on a volcanic base, microscopic scale detail.</p>
+              <div class="product-card-footer">
+                <div class="product-card-price">64 € <span>/ piece</span></div>
+                <button class="product-card-add" aria-label="Add to cart"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0b0b0d" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal-delay-1" data-universe="fantasy" data-price="48">
+            <div class="product-card-image">
+              <img src="assets/images/product_2.png" alt="Forest Archer" loading="lazy" />
+              <span class="product-card-badge">New</span>
+              <button class="product-card-wish" aria-label="Favorites"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="product-card-info">
+              <span class="product-card-universe">Fantasy</span>
+              <h3 class="product-card-name">Forest Archer</h3>
+              <p class="product-card-desc">Warrior elf, dynamic posture, cape and leafy details.</p>
+              <div class="product-card-footer">
+                <div class="product-card-price">48 € <span>/ piece</span></div>
+                <button class="product-card-add" aria-label="Add to cart"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0b0b0d" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal-delay-2" data-universe="scifi" data-price="72">
+            <div class="product-card-image" style="background:linear-gradient(135deg,#0d1a2e,#1a2040,#0a1020);position:relative;aspect-ratio:3/4">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:4rem">🤖</div>
+              <span class="product-card-badge">Limited Edition</span>
+              <button class="product-card-wish" aria-label="Favorites"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="product-card-info">
+              <span class="product-card-universe">Sci-Fi</span>
+              <h3 class="product-card-name">Vanguard Mk-VII</h3>
+              <p class="product-card-desc">Elite soldier in assault armor, with campaign relics.</p>
+              <div class="product-card-footer">
+                <div class="product-card-price">72 € <span>/ piece</span></div>
+                <button class="product-card-add" aria-label="Add to cart"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0b0b0d" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal-delay-3" data-universe="jdr" data-price="56">
+            <div class="product-card-image" style="background:linear-gradient(135deg,#1a0d2e,#2a1040,#120a20);position:relative;aspect-ratio:3/4">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:4rem">🧙</div>
+              <button class="product-card-wish" aria-label="Favorites"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="product-card-info">
+              <span class="product-card-universe">RPG</span>
+              <h3 class="product-card-name">The Archmage</h3>
+              <p class="product-card-desc">Ancient sorcerer, silk robe engraved with runes, crystal staff.</p>
+              <div class="product-card-footer">
+                <div class="product-card-price">56 € <span>/ piece</span></div>
+                <button class="product-card-add" aria-label="Add to cart"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0b0b0d" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-universe="fantasy" data-price="88">
+            <div class="product-card-image" style="background:linear-gradient(135deg,#1a0808,#2e1010,#0f0808);position:relative;aspect-ratio:3/4">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:4rem">👹</div>
+              <button class="product-card-wish" aria-label="Favorites"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="product-card-info">
+              <span class="product-card-universe">Fantasy</span>
+              <h3 class="product-card-name">Demon Lord</h3>
+              <p class="product-card-desc">Horned titan 75mm scale, wings spread, lava base.</p>
+              <div class="product-card-footer">
+                <div class="product-card-price">88 € <span>/ piece</span></div>
+                <button class="product-card-add" aria-label="Add to cart"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0b0b0d" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal-delay-1" data-universe="buste" data-price="120">
+            <div class="product-card-image" style="background:linear-gradient(135deg,#0a1220,#142030,#080f18);position:relative;aspect-ratio:3/4">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:4rem">🗿</div>
+              <span class="product-card-badge">Collection</span>
+              <button class="product-card-wish" aria-label="Favorites"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="product-card-info">
+              <span class="product-card-universe">Bust</span>
+              <h3 class="product-card-name">Legionnaire Bust</h3>
+              <p class="product-card-desc">1/10 scale bust of a Roman soldier, striking expression, 120mm.</p>
+              <div class="product-card-footer">
+                <div class="product-card-price">120 € <span>/ piece</span></div>
+                <button class="product-card-add" aria-label="Add to cart"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0b0b0d" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal-delay-2" data-universe="scifi" data-price="65">
+            <div class="product-card-image" style="background:linear-gradient(135deg,#0a1820,#0e2030,#060e18);position:relative;aspect-ratio:3/4">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:4rem">👾</div>
+              <button class="product-card-wish" aria-label="Favorites"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="product-card-info">
+              <span class="product-card-universe">Sci-Fi</span>
+              <h3 class="product-card-name">Xenomorph Alpha</h3>
+              <p class="product-card-desc">Alien creature, attack posture, chitinous detail.</p>
+              <div class="product-card-footer">
+                <div class="product-card-price">65 € <span>/ piece</span></div>
+                <button class="product-card-add" aria-label="Add to cart"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0b0b0d" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal-delay-3" data-universe="creature" data-price="98">
+            <div class="product-card-image" style="background:linear-gradient(135deg,#0d1a0d,#182818,#080f08);position:relative;aspect-ratio:3/4">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:4rem">🐉</div>
+              <span class="product-card-badge">New</span>
+              <button class="product-card-wish" aria-label="Favorites"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="product-card-info">
+              <span class="product-card-universe">Creature</span>
+              <h3 class="product-card-name">Ancient Wyrm</h3>
+              <p class="product-card-desc">Giant draconic serpent, 200mm wingspan, coiled pose.</p>
+              <div class="product-card-footer">
+                <div class="product-card-price">98 € <span>/ piece</span></div>
+                <button class="product-card-add" aria-label="Add to cart"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0b0b0d" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /collection-grid -->
+      </main>
+    </div><!-- /collection-layout -->
+  </div><!-- /container -->
+</header>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="container">
+    <div class="cta-final-ornament">✦ Your hero awaits ✦</div>
+    <h2 class="reveal">Can't find what you're looking for?</h2>
+    <p class="reveal reveal-delay-1">All our miniatures are customizable. Contact us for a custom creation, unique and signed by Forge-Mondes.</p>
+    <div class="cta-final-btns reveal reveal-delay-2">
+      <a href="custom.html" class="btn btn-primary">Create my custom miniature</a>
+      <a href="contact.html" class="btn btn-ghost">Contact us</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">Forge-Mondes</span>
+        <p>Premium collectible miniature studio. Every figure is a masterpiece designed to last and impress.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" class="footer-social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" class="footer-social-link" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Collection</h4>
+        <ul>
+          <li><a href="collection.html">All miniatures</a></li>
+          <li><a href="collection.html">Fantasy</a></li>
+          <li><a href="collection.html">Sci-Fi</a></li>
+          <li><a href="collection.html">RPG / Characters</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="custom.html">Custom</a></li>
+          <li><a href="studio.html">Our philosophy</a></li>
+          <li><a href="contact.html">Free quote</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Information</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Legal Notice</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Forge-Mondes. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/pages/home.js"></script>
+<script src="js/pages/collection.js"></script>
+</body>
+</html>

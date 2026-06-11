@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Forge-Mondes Miniature Studio</title>
+  <meta name="description" content="Contact the Forge-Mondes team for a custom quote, a question about our collection, or a collaboration. Guaranteed response within 48h." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/pages/contact.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" role="navigation">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo">
+      <div class="navbar-logo-mark">
+        <svg viewBox="0 0 36 36" fill="none"><polygon points="18,2 34,10 34,26 18,34 2,26 2,10" fill="none" stroke="#c9a86a" stroke-width="1.5"/><polygon points="18,8 28,13 28,23 18,28 8,23 8,13" fill="none" stroke="#c9a86a" stroke-width="0.8" opacity="0.5"/><path d="M18 10 L18 26 M12 14 L24 14 M12 22 L24 22" stroke="#c9a86a" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <span class="navbar-logo-text">Forge-Mondes</span>
+    </a>
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="collection.html">Collection</a></li>
+      <li><a href="custom.html">Custom</a></li>
+      <li><a href="studio.html">Studio</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="custom.html" class="navbar-cta">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+      Create a miniature
+    </a>
+    <button class="navbar-burger" id="burger-btn" aria-label="Mobile menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="navbar-mobile" id="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="collection.html">Collection</a>
+  <a href="custom.html">Custom</a>
+  <a href="studio.html">Studio</a>
+  <a href="contact.html" class="active">Contact</a>
+  <a href="custom.html">✦ Create a miniature</a>
+</div>
+
+<main class="contact-page">
+
+  <!-- HERO -->
+  <section class="contact-hero">
+    <div class="container">
+      <div class="reveal">
+        <span class="label">Reach Out</span>
+        <h1>Let's talk about<br/><span class="gradient-text">your project.</span></h1>
+        <p style="max-width:480px; margin:20px auto 0; font-size:1.05rem;">
+          An idea, a question, a collaboration? Our team is listening and responds within 48h.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN LAYOUT -->
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- FORM -->
+      <div class="reveal-left">
+        <div class="contact-form-card">
+          <h2>Send us a message</h2>
+          <p>Whether for a quote, a product question, or simply to discuss your project — we are here.</p>
+
+          <div class="contact-success" id="contact-success" role="status" aria-live="polite">
+            <span class="contact-success-icon">✉️</span>
+            <h3>Message sent!</h3>
+            <p>Thank you for contacting us. Our team will get back to you within the next 48 hours.</p>
+            <a href="index.html" class="btn btn-secondary" style="margin-top:8px;">Back to Home</a>
+          </div>
+
+          <form id="contact-form" novalidate>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+              <div class="form-group">
+                <label class="form-label" for="c-prenom">First Name *</label>
+                <input class="form-input" type="text" id="c-prenom" name="prenom" placeholder="John" required autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="c-nom">Last Name *</label>
+                <input class="form-input" type="text" id="c-nom" name="nom" placeholder="Doe" required autocomplete="family-name" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="c-email">Email *</label>
+              <input class="form-input" type="email" id="c-email" name="email" placeholder="john.doe@email.com" required autocomplete="email" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="c-sujet">Subject</label>
+              <select class="form-select" id="c-sujet" name="sujet">
+                <option value="">Choose a subject…</option>
+                <option value="devis">Quote Request</option>
+                <option value="commande">Order Question</option>
+                <option value="produit">Product Question</option>
+                <option value="partenariat">Partnership / Collaboration</option>
+                <option value="autre">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="c-message">Message *</label>
+              <textarea class="form-textarea" id="c-message" name="message" placeholder="Describe your request, project, or question…" required style="min-height:160px;"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="contact-submit" style="width:100%; justify-content:center; margin-top:8px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+            <p style="font-size:0.78rem; color:var(--muted-2); text-align:center; margin-top:12px;">Guaranteed response within 48h · Your data is confidential</p>
+          </form>
+        </div>
+      </div>
+
+      <!-- INFO -->
+      <div class="contact-info reveal-right">
+        <div class="contact-info-header">
+          <h2>Information</h2>
+          <p>Find us on your favorite networks or contact us directly.</p>
+        </div>
+
+        <div class="contact-info-cards">
+          <div class="contact-info-card">
+            <div class="contact-info-card-icon">📧</div>
+            <div class="contact-info-card-text">
+              <h4>Email</h4>
+              <p>studio@forge-mondes.fr</p>
+              <span>Response within 48h</span>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-card-icon">📍</div>
+            <div class="contact-info-card-text">
+              <h4>Workshop</h4>
+              <p>Paris, France</p>
+              <span>Visits by appointment</span>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-card-icon">⏰</div>
+            <div class="contact-info-card-text">
+              <h4>Hours</h4>
+              <p>Monday – Friday</p>
+              <span>9am – 6pm (CET)</span>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-card-icon">🚀</div>
+            <div class="contact-info-card-text">
+              <h4>Shipping</h4>
+              <p>Worldwide</p>
+              <span>32 countries served</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <h4>Follow Us</h4>
+          <div class="contact-socials-list">
+            <a href="#" class="contact-social-link" aria-label="Instagram">
+              <span class="contact-social-icon">📸</span>
+              Instagram
+            </a>
+            <a href="#" class="contact-social-link" aria-label="Facebook">
+              <span class="contact-social-icon">👥</span>
+              Facebook
+            </a>
+            <a href="#" class="contact-social-link" aria-label="YouTube">
+              <span class="contact-social-icon">🎬</span>
+              YouTube
+            </a>
+            <a href="#" class="contact-social-link" aria-label="Pinterest">
+              <span class="contact-social-icon">📌</span>
+              Pinterest
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /contact-layout -->
+  </div>
+
+  <!-- FAQ -->
+  <section class="contact-faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Frequently Asked Questions</span>
+        <h2>Everything you need to know</h2>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            How much does a custom miniature cost?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>The price depends on size, complexity, and finish. A standard 32mm miniature starts at 45€. Collector pieces (75mm+) are generally between 80€ and 200€. Free quote within 48h.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question" aria-expanded="false">
+            What are the timelines for a custom order?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>After validation of the 3D render, production takes 5 to 10 business days depending on complexity. International shipping takes an additional 3 to 7 days.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-2">
+          <button class="faq-question" aria-expanded="false">
+            Can I order without a 3D file?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. A detailed description (and reference images) is enough. Our sculptors create the 3D model from scratch. This is actually the majority of our custom orders.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-3">
+          <button class="faq-question" aria-expanded="false">
+            Is the miniature ready to paint?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. All our miniatures are delivered with a neat surface finish, cleaned, and without visible supports. They can be primed and painted right away.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            Do you ship internationally?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, we ship to 32 countries. The packaging is artisanal and specially designed to protect fragile pieces during transport. Insured and tracked delivery.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question" aria-expanded="false">
+            Do you offer a painting service?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, our "Pro Painted Finish" service is available upon request for custom miniatures. Our painters work like premium collector studios. Timeframe and price upon quote.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">Forge-Mondes</span>
+        <p>Premium collectible miniature studio. Every figure is a masterpiece designed to last and impress.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" class="footer-social-link" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Collection</h4>
+        <ul>
+          <li><a href="collection.html">All miniatures</a></li>
+          <li><a href="collection.html">Fantasy</a></li>
+          <li><a href="collection.html">Sci-Fi</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="custom.html">Custom</a></li>
+          <li><a href="studio.html">Our philosophy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Information</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Legal Notice</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Forge-Mondes. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // Contact form
+  const form = document.getElementById('contact-form');
+  const success = document.getElementById('contact-success');
+
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const required = form.querySelectorAll('[required]');
+    let valid = true;
+
+    required.forEach(field => {
+      if (!field.value.trim()) {
+        field.style.borderColor = '#e05252';
+        field.style.boxShadow = '0 0 0 3px rgba(224,82,82,0.1)';
+        valid = false;
+        field.addEventListener('input', () => {
+          field.style.borderColor = '';
+          field.style.boxShadow = '';
+        }, { once: true });
+      }
+    });
+
+    if (!valid) {
+      if (window.showToast) showToast('Please fill in all required fields.', 'error');
+      return;
+    }
+
+    const btn = document.getElementById('contact-submit');
+    if (btn) { btn.textContent = 'Sending...'; btn.disabled = true; btn.style.opacity = '0.7'; }
+
+    setTimeout(() => {
+      form.style.display = 'none';
+      if (success) success.classList.add('visible');
+    }, 1200);
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+    });
+  });
+</script>
+
+</body>
+</html>

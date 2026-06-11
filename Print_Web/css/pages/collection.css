@@ -1,0 +1,306 @@
+/* ============================================================
+   FORGEBORN — COLLECTION PAGE CSS
+   ============================================================ */
+
+.collection-page {
+  padding-top: var(--navbar-height);
+  min-height: 100vh;
+}
+
+/* Page Hero Banner */
+.page-hero {
+  position: relative;
+  padding: 80px 0 64px;
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,168,106,0.06) 0%, transparent 70%);
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.page-hero .label {
+  margin-bottom: 16px;
+  display: block;
+}
+
+.page-hero h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin-bottom: 16px;
+}
+
+.page-hero p {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: var(--muted-2);
+  margin-bottom: 48px;
+}
+
+.breadcrumb a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.breadcrumb a:hover { color: var(--accent-gold); }
+
+.breadcrumb-sep {
+  color: var(--muted-2);
+}
+
+.breadcrumb-current {
+  color: var(--accent-gold);
+}
+
+/* ── LAYOUT ──────────────────────────────────────────────── */
+.collection-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  padding: 0 0 100px;
+  align-items: start;
+}
+
+/* ── SIDEBAR ─────────────────────────────────────────────── */
+.collection-sidebar {
+  position: sticky;
+  top: calc(var(--navbar-height) + 24px);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.sidebar-section h4 {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Filter buttons */
+.filter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: left;
+}
+
+.filter-btn:hover {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.filter-btn.active {
+  background: rgba(201,168,106,0.1);
+  border-color: var(--border-gold);
+  color: var(--accent-gold);
+}
+
+.filter-btn-icon {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.filter-btn-count {
+  font-size: 0.72rem;
+  background: var(--surface-3);
+  padding: 2px 8px;
+  border-radius: 20px;
+  color: var(--muted-2);
+}
+
+.filter-btn.active .filter-btn-count {
+  background: rgba(201,168,106,0.15);
+  color: var(--accent-gold);
+}
+
+/* Price range */
+.price-range-inputs {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.price-input {
+  flex: 1;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  color: var(--text);
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.price-input:focus {
+  border-color: var(--accent-gold);
+}
+
+.price-sep {
+  color: var(--muted-2);
+  font-size: 0.8rem;
+}
+
+.range-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(to right, var(--accent-gold) 0%, var(--accent-gold) 60%, var(--surface-3) 60%);
+  outline: none;
+  cursor: pointer;
+}
+
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent-gold);
+  box-shadow: 0 0 8px rgba(201,168,106,0.5);
+  cursor: pointer;
+}
+
+/* Sort bar */
+.collection-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.collection-count {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.collection-count strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.sort-select {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  color: var(--text);
+  font-size: 0.82rem;
+  outline: none;
+  cursor: pointer;
+  transition: border-color var(--transition-fast);
+}
+
+.sort-select:focus {
+  border-color: var(--accent-gold);
+}
+
+/* Products grid - collection dense */
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Tag filters active */
+.active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.filter-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  background: rgba(201,168,106,0.1);
+  border: 1px solid var(--border-gold);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  color: var(--accent-gold);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-tag:hover {
+  background: rgba(201,168,106,0.18);
+}
+
+.filter-tag-x {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* ── RESPONSIVE ──────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .collection-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-sidebar {
+    position: static;
+    display: none;
+  }
+
+  .collection-sidebar.mobile-open {
+    display: flex;
+  }
+
+  .collection-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .collection-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+}
