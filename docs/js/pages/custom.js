@@ -32,6 +32,12 @@
     });
   }
 
+  if (uploadZone && fileInput) {
+    uploadZone.addEventListener('click', () => {
+      fileInput.click();
+    });
+  }
+
   if (uploadZone) {
     uploadZone.addEventListener('dragover', (e) => {
       e.preventDefault();
